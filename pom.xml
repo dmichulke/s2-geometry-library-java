@@ -47,10 +47,10 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
                 <configuration>
-                    <target>1.8</target>
-                    <source>1.8</source>
-                    <testTarget>1.8</testTarget>
-                    <testSource>1.8</testSource>
+                    <target>1.7</target>
+                    <source>1.7</source>
+                    <testTarget>1.7</testTarget>
+                    <testSource>1.7</testSource>
                 </configuration>
             </plugin>
             <plugin>

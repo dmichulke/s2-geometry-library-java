@@ -159,6 +159,10 @@ public final strictfp class S2 {
 
         /**
          * Return the value of a metric for cells at the given level.
+         * 
+         * Note that the area values are in steradians and you need to multiply 
+         * these values by the square radius of the sphere (earth radius ~ 6370km) 
+         * to arrive at a meaningful unit.
          */
         public double getValue(int level) {
             return StrictMath.scalb(deriv, dim * (1 - level));

@@ -35,7 +35,7 @@ public strictfp class S2CellUnionTest extends GeometryTestCase {
         LOG.info("TestBasic");
 
         S2CellUnion empty = new S2CellUnion();
-        empty.initFromCellIds(Lists.newArrayList());
+        empty.initFromCellIds(new ArrayList<S2CellId>());
         assertEquals(0, empty.size());
 
         S2CellId face1Id = S2CellId.fromFacePosLevel(1, 0, 0);
